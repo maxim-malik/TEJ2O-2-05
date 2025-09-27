@@ -9,7 +9,7 @@ basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, () => {
     basic.clearScreen()
-    let temp = input.temperature()
-    let kelvin = temp + 273.15
+    const temp = input.temperature()
+    const kelvin = temp + 273.15
     basic.showNumber(kelvin)
 })
