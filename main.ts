@@ -1,8 +1,15 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Max
+ * Created on: Sep 2025
+ * This program shows temperature in kelvin
 */
 
-basic.showString('Hello, World!')
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, () => {
+    basic.clearScreen()
+    let temp = input.temperature()
+    let kelvin = temp + 273.15
+    basic.showNumber(kelvin)
+})
